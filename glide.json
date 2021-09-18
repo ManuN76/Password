@@ -1,0 +1,43 @@
+[
+  {
+    "kind": "column",
+    "name": "Password",
+    "description": "Password",
+    "author": "Manu.n",
+    "params": [
+      {
+        "name": "key",
+        "displayName": "Key",
+        "type": "string"
+      },
+      {
+        "name": "length",
+        "displayName": "Length (8 par default)",
+        "type": "number"
+      },
+      {
+        "name": "lowercase",
+        "displayName": "LowerCase (azertyuiopqsdfghjklmwxcvbn) 1:included (par default) 0 : excluded",
+        "type": "boolean"
+      },
+      {
+        "name": "uppercase",
+        "displayName": "UpperCase (AZERTYUIOPQSDFGHJKLMWXCVBN) 1:included (par default) 0 : excluded",
+        "type": "boolean"
+      },
+      {
+        "name": "numbers",
+        "displayName": "Numbers (0123456789) 1:included (par default) 0 : excluded",
+        "type": "boolean"
+      },
+      {
+        "name": "symboles",
+        "displayName": "Symboles (!@#$%^&*-_=+\\|:;',.>/?~) 1:included (par default) 0 : excluded",
+        "type": "boolean"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]

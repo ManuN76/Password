@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+   // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   testDebug();
+
+async function testDebug() {
+
+let key = { type: "string", value: "" };
+let length = { type: "number", value: 14 };
+let lower = { type: "boolean", value: true }; //LowerCase (azertyuiopqsdfghjklmwxcvbn) 1:included (par default) 0 : excluded
+let upper = { type: "boolean", value: true }; //UpperCase (AZERTYUIOPQSDFGHJKLMWXCVBN) 1:included (par default) 0 : excluded
+let num = { type: "boolean", value: true }; //Numbers (0123456789) 1:included (par default) 0 : excluded
+let sym = { type: "boolean", value: true }; //Symboles (!@#$%^&*-_=+\\|:;',.>/?~) 1:included (par default) 0 : excluded
+
+let result = await window.function(key, length, lower, upper, num, sym);
+document.getElementById("result").innerHTML = result;
+
+}
+</script>
+</body>
+
+</html>
